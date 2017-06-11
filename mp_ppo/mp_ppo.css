@@ -1,0 +1,44 @@
+/* Common setting */
+html {
+	font-size: 15px;
+	line-height: 1.6;
+/*	font-family: 'Spoqa Han Sans', sans-serif;		*/
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	/*letter-spacing: -0.02em;*/
+}
+
+/*[lang="en"] {
+	font-family: 'Montserrat-regular', sans-serif;
+} */
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	padding: 0;
+}
+
+/*mobile*/
+
+
+/*tablet*/
+/*@media screen and (min-width: 768px) and (max-width: 959px) {}*/
+@media screen and (min-width: 768px){
+
+}
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>pra</title>
+	<link rel="stylesheet" href="grid.css">
+	<!-- <link rel="stylesheet" href="grid-padding.css">  -->
+	<link rel="stylesheet" href="mp.css">
+	<link rel="stylesheet" href="cdt.css">
+	<link rel="stylesheet" href="flex.css">
+	<link rel="stylesheet" href="mp_ppo.css">
+</head>
+<body>
+
+<!-- grid system: margin col-10, push-2 or offset-2 -->
+<!-- 
+첫 번째 row: 왼쪽-margin-left(10)+left(160)=170
+두 번째 row: 왼쪽-margin-left(10)->margin-left(160)=160 -> 덮어씀 
+
+결과적으로 첫 번째 row의 column이 원래 기대했던 것보다 10px만큼 더 왼쪽으로 가게 된다.
+-->
+<div class="container">
+	<div class="row">
+		<div class="col-dk-10 push-dk-2" style="background-color: yellow">
+			<p>hi1</p>
+		</div>			
+		<div class="col-dk-10 push-dk-2" style="background-color: yellow">
+			<p>hi1</p>
+		</div>				
+	</div>
+	<div class="row">
+		<div class="col-dk-10 offset-dk-2" style="background-color: green">
+			<p>hi2</p>
+		</div>
+	</div>
+</div>
+
+<!-- grid system: padding col-10, push-2 or offset-2 -->
+<!-- 
+첫 번째 row: 왼쪽-padding-left(10, content안에서 간격이 생김)->left(160)=160
+두 번째 row: 왼쪽-padding-left(10, content안에서 간격이 생김)->margin-left(160)=160  
+
+padding은 content안에서 간격이 생기기 때문에 영향을 주지 않고 원하는 대로 나온다.
+-->
+<div class="container">
+	<div class="row">
+		<div class="col-dk-10 push-dk-2" style="background-color: yellow">
+			<p>hi1</p>
+		</div>		
+		<div class="col-dk-10 push-dk-2" style="background-color: yellow">
+			<p>hi1</p>
+		</div>			
+	</div>
+	<div class="row">
+		<div class="col-dk-10 offset-dk-2" style="background-color: green">
+			<p>hi2</p>
+		</div>
+	</div>
+</div>
+
+<!-- 결론 1: 
+margin-nowrap
+장점
+- 가로 배치할 때 개떡같이 만들어도 nowrap 캐리해준다.
+
+단점
+- nowrap 때문에 세로 배치할 때 살짝 애먹는다.
+->새로운 row(flex-box) 만들기
+
+- margin version을 쓰면 push에서 오차가 생긴다.(margin-left+left)
+->margin-left 해제 해주기
+
+padding-wrap
+장점
+- wrap을 사용하기 때문에 한 줄이(12) 꽉차면 자연스럽게 다음줄로 넘어간다.
+
+단점
+- 간격 잘 못 주면 원하지 않는데 다음줄로 넘어가서 레이아웃 박살난다.
+- padding version은 column 간의 간격을 만들 때 따로 margin 값을 줘야 한다.
+
+결론 2: margin-nowrap을 쓰면서 단점 커버 잘 하자! -->
+</body>
+</html>
