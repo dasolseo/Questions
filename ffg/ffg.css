@@ -1,0 +1,86 @@
+/* Common setting */
+html {
+	font-size: 15px;
+	line-height: 1.6;
+/*	font-family: 'Spoqa Han Sans', sans-serif;		*/
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	/*letter-spacing: -0.02em;*/
+}
+
+/*[lang="en"] {
+	font-family: 'Montserrat-regular', sans-serif;
+} */
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	padding: 0;
+}
+
+/*mobile*/
+.nav-menu {
+	line-height: 3.2; /*float*/
+}
+
+.nav {
+	display: none;
+}
+
+
+
+/*tablet*/
+/*@media screen and (min-width: 768px) and (max-width: 959px) {}*/
+@media screen and (min-width: 768px){
+.nav {
+	display: block;
+}
+
+.nav-menu {
+	display: none;
+}
+
+}
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+.nav {
+	display: block;
+}
+
+.nav-menu {
+	display: none;
+}
+}
+
+
+/*float*/
+.header:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.brand {
+	float: left;
+}
+
+.nav {
+	float: right;
+}
+
+.nav li {
+	float: left;
+	text-align: center;
+	line-height: 3.2;
+}
