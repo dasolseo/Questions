@@ -1,0 +1,56 @@
+/* Common setting */
+html {
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;	
+}
+
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	padding: 0;
+}
+
+/*mobile*/
+.header {
+	width: 100%;
+	padding: 0 30px;
+	position: fixed;
+	background-color: blue;
+	justify-content: space-between;
+}
+
+/*tablet*/
+/*@media screen and (min-width: 768px) and (max-width: 959px) {}*/
+@media screen and (min-width: 768px){
+.header {
+	width: 100%;
+	padding: 0 30px;
+	position: fixed;
+	background-color: green;
+}
+
+}
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+.header {
+	width: 960px;
+	padding: 0;
+	position: fixed;
+	background-color: yellow;
+}
+
+}

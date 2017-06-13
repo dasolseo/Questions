@@ -1,0 +1,49 @@
+/*자주 쓰는 text color*/
+.text-muted {color: #8492a7;}
+.text-primary {color: #00b5ff;}
+.text-success {color: #00d061;}
+.text-info {color: #7e55f3;}
+.text-warning {color: #ffd654;}
+.text-danger {color: #ff4743;}
+
+/*자주 쓰는 background color*/
+.bg-muted {background-color: #8492a7;}
+.bg-primary {background-color: #00b5ff;}
+.bg-success {background-color: #00d061;}
+.bg-info {background-color: #7e55f3;}
+.bg-warning {background-color: #ffd654;}
+.bg-danger {background-color: #ff4743;}
+.bg-faded {background-color: #ecedef;}
+
+/*display*/
+.d-block {display: block;}
+.d-inline {display: inline;}
+.d-inline-block {display: inline-block;}
+.d-none {display: none;}
+
+/*text-align*/
+/*mobile*/
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+
+/*tablet*/
+/*@media screen and (min-width: 768px) and (max-width: 959px) {}*/
+@media screen and (min-width: 768px){
+.text-tb-left {text-align: left;}
+.text-tb-right {text-align: right;}
+.text-tb-center {text-align: center;}
+}
+
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+.text-dk-left {text-align: left;}
+.text-dk-right {text-align: right;}
+.text-dk-center {text-align: center;}	
+}
+
+.sr-only {
+	display: none
+}
