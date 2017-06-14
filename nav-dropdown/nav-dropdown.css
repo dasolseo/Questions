@@ -1,0 +1,92 @@
+/* Common setting */
+html {
+	font-size: 15px;
+	line-height: 1.6;
+/*	font-family: 'Spoqa Han Sans', sans-serif;		*/
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	/*letter-spacing: -0.02em;*/
+}
+
+/*[lang="en"] {
+	font-family: 'Montserrat-regular', sans-serif;
+} */
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	padding: 0;
+}
+
+.nav {
+	display: none;
+}
+
+/*mobile*/
+.header {
+	position: relative;
+}
+
+.brand {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#nav-menu {
+	position: fixed;
+	top: 12px;
+	right: 0;
+	cursor: pointer;
+}
+
+#sub-nav {
+	display: none;
+}
+
+/*tablet*/
+/*@media screen and (min-width: 768px) and (max-width: 959px) {}*/
+@media screen and (min-width: 768px){
+.header,
+.brand {
+	position: static;
+}
+
+#nav-menu {
+	display: none;
+}
+
+.nav {
+	display: flex;
+}
+
+
+}
+
+/*desktop*/
+@media screen and (min-width: 960px) {
+.header,
+.brand {
+	position: static;
+}
+
+#nav-menu {
+	display: none;
+}
+
+.nav {
+	display: flex;
+}
+
+}
+

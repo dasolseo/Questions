@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>pra</title>
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="mp.css">
+	<link rel="stylesheet" href="cdt.css">
+	<link rel="stylesheet" href="flex.css">
+	<link rel="stylesheet" href="nav-dropdown.css">
+</head>
+<body>
+<header class="header container">
+	<div class="row px-3 px-tb-3 px-dk-0">
+		<div class="col-6 brand">
+			<h1>DASOL SEO</h1>
+		</div>
+		<div id="nav-menu" class="col-6 text-right">
+			<h4>Menu</h4>
+			<ul>
+				<li id="sub-nav"><a href="#">Home</a></li>
+				<li id="sub-nav"><a href="#">About</a></li>
+				<li id="sub-nav"><a href="#">Contact</a></li>
+			</ul>		
+		</div>
+		<nav class="col-tb-6 col-dk-6 nav d-flex justify-content-end align-items-center">
+			<h2 class="sr-only">navigation</h2>
+			<ul class="d-flex">
+				<li class="pl-4"><a href="#">Home</a></li>
+				<li class="pl-4"><a href="#">About</a></li>
+				<li class="pl-4"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+$( "#nav-menu" ).click(function () {
+    $( "li" ).slideToggle( "normal" );
+});
+</script>
+
+</body>
+</html>
